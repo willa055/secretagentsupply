@@ -154,7 +154,7 @@ nav ul {
   padding-bottom: 0.5rem
 }
 .info {
-  width: 35%;
+  min-width: 35%;
 }
 
 .info h4 {
