@@ -1,3 +1,60 @@
+@media only screen and (max-width: 1024px){
+  font-size: 16px; {
+  }
+  #mobile {
+    visibility: visible;
+  }
+  #bigscreen {
+    display: none;
+    }
+  .product {
+    min-width: 47%;
+  }
+  #glasses {
+    display: none;
+    }
+  .info {
+    min-width: 35%;
+  }
+  .container {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 470px) {
+  main {
+    max-height: 15rem;
+    top: 10rem;
+  }
+  .headline {
+    font-weight: bold;
+    padding: 1rem 2rem;
+  }
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+  #watch {
+    display: none;
+  }
+  .product {
+    min-width: 90%;
+  }
+  .businessinfo {
+    flex-wrap: wrap;
+  }
+  .info {
+    min-width: 90%
+  }
+  .hours {
+    padding-top: 0.5rem;
+  }
+  .footer h4 {
+    text-align: center;
+  }
+}
 html {
   font-size: 18px;
 }
@@ -6,7 +63,6 @@ body {
 }
 .container {
   max-width: 960px;
-  margin: 0 auto;
 }
 header {
   display: flex;
@@ -17,26 +73,25 @@ header {
   color: white;
 }
 .logo {
-  padding-top: 0.66rem;
-  padding-bottom: 0.66rem;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
 }
 .logo img {
   height: 1.5rem;
-  padding-right: 1rem;
-  padding-left: 0.5rem;
+  padding: 0 1rem 0 0.5rem;
 }
 header h4 {
   font-size: 1rem;
+  padding: 0.66rem 0;
 }
 main {
   display: flex;
-  border-top: 9rem;
   align-items: center;
   justify-content: flex-start;
   background-image: url("../images/moto.jpeg");
   background-size: cover;
+  background-position: center;
   height: 25rem;
 }
 .headline {
@@ -44,28 +99,31 @@ main {
   background-color: black;
   width: 20rem;
   padding: 2rem 3rem;
-  font-weight: bold;
-  z-index: 5;
+  top: 9rem
 }
 .headline h4 {
   font-size: 1rem;
-  padding-bottom: 0.25rem;
 }
 .headline h1 {
   font-size: 2rem;
+  padding-top: 0.25rem;
+  line-height: 1.2em;
+}
+.headline h4, h1 {
+  font-weight: bold;
 }
 nav {
   background-color: firebrick;
   color: white;
-
 }
 nav ul {
   display: flex;
   justify-content: space-around;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding: 0.75rem 0;
 }
-
+#mobile {
+  visibility: hidden;
+}
 .products, .businessinfo {
   display: flex;
   justify-content: space-between;
