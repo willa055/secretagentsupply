@@ -1,60 +1,7 @@
-@media only screen and (max-width: 1024px){
-  font-size: 16px; {
-  }
-  #mobile {
-    visibility: visible;
-  }
-  #bigscreen {
-    display: none;
-    }
-  .product {
-    min-width: 47%;
-  }
-  #glasses {
-    display: none;
-    }
-  .info {
-    min-width: 35%;
-  }
-  .container {
-    padding-left: 0;
-    margin-left: 0;
-  }
+* {
+  box-sizing: border-box;
 }
-@media only screen and (max-width: 470px) {
-  main {
-    max-height: 15rem;
-    top: 10rem;
-  }
-  .headline {
-    font-weight: bold;
-    padding: 1rem 2rem;
-  }
-  .headline h4 {
-    font-size: 0.77rem;
-  }
-  .headline h1 {
-    font-size: 1rem;
-  }
-  #watch {
-    display: none;
-  }
-  .product {
-    min-width: 90%;
-  }
-  .businessinfo {
-    flex-wrap: wrap;
-  }
-  .info {
-    min-width: 90%
-  }
-  .hours {
-    padding-top: 0.5rem;
-  }
-  .footer h4 {
-    text-align: center;
-  }
-}
+
 html {
   font-size: 18px;
 }
@@ -62,7 +9,8 @@ body {
   font-family: Helvetica, sans-serif;
 }
 .container {
-  max-width: 960px;
+  width: 960px;
+  margin: auto;
 }
 header {
   display: flex;
@@ -122,14 +70,14 @@ nav ul {
   padding: 0.75rem 0;
 }
 #mobile {
-  visibility: hidden;
+  display: none;
 }
 .products, .businessinfo {
   display: flex;
   justify-content: space-between;
-  margin: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
-
 .product {
   width: 30%;
 }
@@ -172,4 +120,61 @@ footer {
 
 footer h4 {
   text-align: left;
+}
+@media only screen and (max-width: 1024px){
+  #mobile {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  #bigscreen {
+    display: none;
+    }
+  .product {
+    min-width: 47%;
+  }
+  #glasses {
+    display: none;
+    }
+  .info {
+    min-width: 35%;
+  }
+  .container {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 470px) {
+  main {
+    max-height: 15rem;
+    top: 10rem;
+  }
+  .headline {
+    font-weight: bold;
+    padding: 1rem 2rem;
+  }
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+  .headline h1 {
+    font-size: 1rem;
+  }
+  #watch {
+    display: none;
+  }
+  .product {
+    width: 90%;
+  }
+  .businessinfo {
+    flex-wrap: wrap;
+  }
+  .info {
+    width: 100%
+  }
+  .hours {
+    padding-top: 0.5rem;
+  }
+  .footer h4 {
+    text-align: center;
+  }
 }
