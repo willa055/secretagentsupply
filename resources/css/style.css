@@ -259,4 +259,7 @@ footer h3 {
   nav {
     justify-content: space-between;
   }
+  .menu {
+    display: none;
+  }
 }
